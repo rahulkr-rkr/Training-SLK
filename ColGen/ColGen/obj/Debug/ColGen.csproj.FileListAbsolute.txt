@@ -1,0 +1,6 @@
+C:\Workarea\csharp\ColGen\ColGen\bin\Debug\ColGen.exe.config
+C:\Workarea\csharp\ColGen\ColGen\obj\Debug\ColGen.csprojResolveAssemblyReference.cache
+C:\Workarea\csharp\ColGen\ColGen\bin\Debug\ColGen.exe
+C:\Workarea\csharp\ColGen\ColGen\bin\Debug\ColGen.pdb
+C:\Workarea\csharp\ColGen\ColGen\obj\Debug\ColGen.exe
+C:\Workarea\csharp\ColGen\ColGen\obj\Debug\ColGen.pdb
