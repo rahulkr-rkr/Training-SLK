@@ -1,0 +1,6 @@
+C:\Workarea\csharp\Assignments1\Assignments1\bin\Debug\Assignments1.exe.config
+C:\Workarea\csharp\Assignments1\Assignments1\bin\Debug\Assignments1.exe
+C:\Workarea\csharp\Assignments1\Assignments1\bin\Debug\Assignments1.pdb
+C:\Workarea\csharp\Assignments1\Assignments1\obj\Debug\Assignments1.csprojResolveAssemblyReference.cache
+C:\Workarea\csharp\Assignments1\Assignments1\obj\Debug\Assignments1.exe
+C:\Workarea\csharp\Assignments1\Assignments1\obj\Debug\Assignments1.pdb
