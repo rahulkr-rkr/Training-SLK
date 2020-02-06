@@ -1,0 +1,6 @@
+C:\Workarea\csharp\MyADO\MyADO\bin\Debug\MyADO.exe.config
+C:\Workarea\csharp\MyADO\MyADO\bin\Debug\MyADO.exe
+C:\Workarea\csharp\MyADO\MyADO\bin\Debug\MyADO.pdb
+C:\Workarea\csharp\MyADO\MyADO\obj\Debug\MyADO.csprojResolveAssemblyReference.cache
+C:\Workarea\csharp\MyADO\MyADO\obj\Debug\MyADO.exe
+C:\Workarea\csharp\MyADO\MyADO\obj\Debug\MyADO.pdb

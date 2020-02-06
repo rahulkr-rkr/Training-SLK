@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>myConsoleApplication1</name>
+    </assembly>
+    <members>
+        <member name="T:myConsoleApplication1.Calculator">
+            <summary>
+            Compute Numberic value and HRA details
+            </summary>
+        </member>
+        <member name="M:myConsoleApplication1.Calculator.Sum(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:myConsoleApplication1.Calculator.GetHra(System.Int32)">
+            <summary>
+            this function will calculate HRa based on the basic of the employee
+            </summary>
+            <param name="Basic">Of employee per month</param>
+            <returns>30% of basic been passed</returns>
+        </member>
+    </members>
+</doc>

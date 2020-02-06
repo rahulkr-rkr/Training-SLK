@@ -1,0 +1,7 @@
+C:\Workarea\csharp\myConsoleApplication1\myConsoleApplication1\bin\Debug\myConsoleApplication1.exe.config
+C:\Workarea\csharp\myConsoleApplication1\myConsoleApplication1\bin\Debug\myConsoleApplication1.exe
+C:\Workarea\csharp\myConsoleApplication1\myConsoleApplication1\bin\Debug\myConsoleApplication1.pdb
+C:\Workarea\csharp\myConsoleApplication1\myConsoleApplication1\obj\Debug\myConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Workarea\csharp\myConsoleApplication1\myConsoleApplication1\obj\Debug\myConsoleApplication1.exe
+C:\Workarea\csharp\myConsoleApplication1\myConsoleApplication1\obj\Debug\myConsoleApplication1.pdb
+C:\Workarea\csharp\myConsoleApplication1\myConsoleApplication1\bin\Debug\myConsoleApplication1.XML
