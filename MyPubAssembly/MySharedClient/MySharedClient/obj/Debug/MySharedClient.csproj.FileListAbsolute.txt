@@ -1,0 +1,8 @@
+C:\Workarea\csharp\MyPubAssembly\MySharedClient\MySharedClient\bin\Debug\MySharedClient.exe.config
+C:\Workarea\csharp\MyPubAssembly\MySharedClient\MySharedClient\bin\Debug\MySharedClient.exe
+C:\Workarea\csharp\MyPubAssembly\MySharedClient\MySharedClient\bin\Debug\MySharedClient.pdb
+C:\Workarea\csharp\MyPubAssembly\MySharedClient\MySharedClient\bin\Debug\MySharedComputer.dll
+C:\Workarea\csharp\MyPubAssembly\MySharedClient\MySharedClient\bin\Debug\MySharedComputer.pdb
+C:\Workarea\csharp\MyPubAssembly\MySharedClient\MySharedClient\obj\Debug\MySharedClient.csprojResolveAssemblyReference.cache
+C:\Workarea\csharp\MyPubAssembly\MySharedClient\MySharedClient\obj\Debug\MySharedClient.exe
+C:\Workarea\csharp\MyPubAssembly\MySharedClient\MySharedClient\obj\Debug\MySharedClient.pdb

@@ -1,0 +1,6 @@
+C:\Workarea\csharp\myOops\myOops\bin\Debug\myOops.exe.config
+C:\Workarea\csharp\myOops\myOops\bin\Debug\myOops.exe
+C:\Workarea\csharp\myOops\myOops\bin\Debug\myOops.pdb
+C:\Workarea\csharp\myOops\myOops\obj\Debug\myOops.csprojResolveAssemblyReference.cache
+C:\Workarea\csharp\myOops\myOops\obj\Debug\myOops.exe
+C:\Workarea\csharp\myOops\myOops\obj\Debug\myOops.pdb
