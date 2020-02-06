@@ -1,0 +1,6 @@
+C:\Workarea\csharp\PrpIndEnDel\PrpIndEnDel\bin\Debug\PrpIndEnDel.exe.config
+C:\Workarea\csharp\PrpIndEnDel\PrpIndEnDel\bin\Debug\PrpIndEnDel.exe
+C:\Workarea\csharp\PrpIndEnDel\PrpIndEnDel\bin\Debug\PrpIndEnDel.pdb
+C:\Workarea\csharp\PrpIndEnDel\PrpIndEnDel\obj\Debug\PrpIndEnDel.csprojResolveAssemblyReference.cache
+C:\Workarea\csharp\PrpIndEnDel\PrpIndEnDel\obj\Debug\PrpIndEnDel.exe
+C:\Workarea\csharp\PrpIndEnDel\PrpIndEnDel\obj\Debug\PrpIndEnDel.pdb
