@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>demo on javascript</title>
+    <style>
+        h1
+        {
+            background-color:deepskyblue;
+            font-family:Forte;
+        }
+        form
+        {
+          background-color:forestgreen;
+          font-size:xx-large;
+          font-family:'Times New Roman';
+        }
+        div
+        {
+          background-color:lightcoral;
+        }
+    </style>
+    <script type="text/javascript">
+        function MySum(val1,val2)
+        {
+            //alert("Mysum function is called" + val1 + val2);
+            var total = parseInt(val1) + parseInt(val2);
+            //document.getElementById("lblMsg").innerText = total;
+            //lblMsg.innerText = "<p style='color:red;'>Results:" + total + "</p>";
+            lblMsg.innerHTML = "<p style='color:blue;'>Results:" + total + "</p>";
+
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Demo for using Javascript in HTML</h1><hr />
+
+    <form>
+        <b>value1:</b> <input type="text"  id="t1" value="50"/><br /><br />
+        <b>value2:</b> <input type="text" id="t2" value="150" /><hr />
+        <div id="lblMsg"></div>
+        <br />
+        <input type="button" value="sum" onclick="MySum(t1.value, t2.value);"/>
+        <input type="reset" value="default" onclick="lblMsg.innerText = '';"/>
+    </form>
+    <hr />
+
+</body>
+</html>

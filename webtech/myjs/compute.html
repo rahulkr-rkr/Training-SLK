@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>compute table</title>
+    <script language="javascript">
+        //avoid using name attribute in a tag as edge is not recognizing name attribute.
+        function calculate()
+        {
+            pt1.value = qt1.value * t1.value;
+            pt2.value = qt2.value * t2.value;
+            pt3.value = qt3.value * t3.value;
+
+            tt1.value = parseInt(pt1.value) + parseInt(pt2.value) + parseInt(pt3.value);
+        }
+    </script>
+</head>
+<body bgcolor="salmon">
+    <center>
+        <h1>TOY UNIVERSE</h1>
+        <br />
+        <br />
+        <table border="2" bgcolor="lightblue">
+            <tr>
+                <th>Item Name</th>
+                <th>Item Cost</th>
+                <th>Item Quantity</th>
+                <th>Item Price</th>
+            </tr>
+
+            <tr>
+                <td>Donald Duck</td>
+                <td>
+                    <input type="text" size="10" name="t1" id="t1"/>
+                </td>
+                <td>
+                    <input type="text" size="10" name="qt1" id="qt1" />
+                </td>
+                <td>
+                    <input type="text" size="10" name="pt1" id="pt1" readonly />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mickey Mouse</td>
+                <td>
+                    <input type="text" size="10" name="t2" id="t2" />
+                </td>
+                <td>
+                    <input type="text" size="10" name="qt2" id="qt2" />
+                </td>
+                <td>
+                    <input type="text" size="10" name="pt2" id="pt2" readonly />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mechanical Train</td>
+                <td>
+                    <input type="text" size="10" name="t3" id="t3" />
+                </td>
+                <td>
+                    <input type="text" size="10" name="qt3" id="qt3" />
+                </td>
+                <td>
+                    <input type="text" size="10" name="pt3" id="pt3" readonly />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="compute" name="clk" align="center" onclick="calculate()"/>
+                </td>
+                <td><b>Total Cost</b></td>
+                <td>
+                    <input type="text" size="10" name="tt1" id="tt1" readonly/>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

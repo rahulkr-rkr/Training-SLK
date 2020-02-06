@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        var Status;
+        $(document).ready(function () {
+            Status = true;
+            $("#p1").click(function () {
+                if (Status == true) {
+                    $("#p2").show();
+                    Status = false;
+                }
+                else {
+                    $("#p2").hide();
+                    Status = true;
+                }
+            });
+        });
+    </script>
+    <style>
+        p{
+            font-family:'Copperplate Gothic';
+            font-size:xx-large;
+            font-weight:bolder;
+            background-color:aqua;
+         }
+    </style>
+</head>
+<body>
+    <p id="p1"><font style="color:darkgreen;">CLICK HERE TO HIDE/UNHIDE</font></p>
+    <p id="p2">CAN WE GO FOR A BREAK NOW??</p>
+</body>
+</html>

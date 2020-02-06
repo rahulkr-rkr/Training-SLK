@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ajax</title>
+    <script language="javascript">
+        var srvObj;
+        function compute()
+        {
+            lblMsg.innerHTML = "";
+            lblMsgForRH.innerHTML = "";
+            //checking for browser support for ajax
+            if(window.XMLHttpRequest)
+            {
+                srvObj = new XMLHttpRequest();
+            }
+            else if(window.ActiveXObject)
+            {
+                srvObj = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xVal = t1.value;
+            yVal = t2.value;
+
+            parm = "?t1=" + xVal + "&t2=" + yVal;
+            srvObj.onreadystatechange = responseHandler;
+            //url = "http://10.60.24.135/asp/AspAjaxServer.asp" + parm;
+
+            var PageLocation = window.location.origin;
+            //if (PageLocation.startsWith("file://", 0))
+            if (PageLocation == "file://")
+                PageLocation = "http://10.60.24.135";
+
+            url = PageLocation + "/asp/AspAjaxServer.asp" + parm;
+
+            srvObj.open("GET", url, true);
+            //srvObj.setRequestHeader("Access-Control-Allow-Origin", "*");
+            srvObj.send(null);
+
+            lblMsg.innerHTML = "Waiting For"+url+ "to respond...!!!!";
+        }
+
+        function responseHandler()
+        {
+           if(srvObj.readyState == 4)
+            {
+                reply = srvObj.responseText;
+                t3.value = reply;
+                lblMsg.innerHTML = "";
+                lblMsgForRH.innerHTML = srvObj.getAllResponseHeaders();
+            }
+
+        }
+
+    </script>
+</head>
+<body bgcolor="lightblue">
+    <h1 style="background-color:yellow; font-family:Chiller; font-size:xx-large;"><center>Demo for Ajax Calling server PAGE</center></h1>
+    <h2 style="background-color:lightyellow">NOTE:Access this page using HTTP protocol from edge</h2>
+    <h2 style="background-color:lightyellow">Edge doesnt allow calls cross protocol filr and http</h2>
+    <br />
+
+    Enter base Number: <input type="text" id="t1" value="2"/>
+    Enter Power Value: <input type="text" id="t2" value="5" />
+
+    Results: <textarea rows="4" cols="40" id="t3" readonly></textarea>
+    <br />
+    <input type="button" id="b1" value="Sum" onclick="compute()"/>
+    <br />
+    <textarea rows="4" cols="30" >Try Typing here immediately after clicking the calculate button</textarea> 
+    Server Message: <span id="lblMsg" style="background-color:burlywood;"></span><br />
+    Server Responce Header: <span id="lblMsgForRH" style="background-color:burlywood;"></span><br />
+</body>
+</html>

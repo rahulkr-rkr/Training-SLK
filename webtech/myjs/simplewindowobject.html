@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Document object</title>
+    <script language="javascript">
+        function NewWindow()
+        {
+            //url and window name
+            objWindow = open("", "MyNewWindow", "status=0;toolbar=0;");
+            objWindow.document.writeln("<h1> Message written by the parent window</h1>");
+            objWindow.document.bgColor = "wheat";
+        }
+
+        function CloseWindow()
+        {
+            window.close();
+        }
+
+        function ChnColor()
+        {
+            document.bgColor = myclr.value;
+            window.status = "color changed to" + myclr.value;
+            window.document.title = "color changed to" + myclr.value;
+        }
+
+        function ClientInfo()
+        {
+            objWin = open();
+            ci = window.clientInformation.appName + window.clientInformation.appVersion;
+            objWin.document.writeln(ci);
+        }
+    </script>
+</head>
+<body bgcolor="lightgreen">
+   <h1 style="font-family:'Bauhaus 93';">DOCUMENT OBJECT</h1><hr />
+    <input type="button" value="new window" onclick="NewWindow()" />
+    <input type="button" value="close window" onclick="CloseWindow()" />
+
+    <select name="myclr" id="myclr" onchange="ChnColor()">
+        <option value="aliceblue">aliceblue </option>
+        <option value="antiquewhite">antiquewhite</option>
+        <option value="azure">azure </option>
+        <option value="darkcyan">darkcyan </option>
+        <option value="bisque">bisque </option>
+        <option value="chocolate">chocolate </option>
+        <option value="honeydew">honeydew </option>
+        <option value="forestgreen">forestgreen </option>
+        <option value="linen">linen </option>
+    </select><br />
+    <hr />
+    <input type="button" value="Print Client Info" onclick="ClientInfo()" />
+     <hr />
+</body>
+</html>

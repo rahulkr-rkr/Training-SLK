@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>forms</title>
+    <style>
+        div 
+        {
+            background-color: slateblue;
+        }
+      
+    </style>
+</head>
+<body bgcolor="#fff2236">
+    <div>
+        <h1 align="center"><font color="deepskyblue">Sample Data Entry Form</font></h1>
+    </div>
+    <hr />
+
+    <!--use to submit data to server side script file like(CGI/JSP/SERVLET/ASP/ASP.NET)-->
+    <!--"POST" does not pass the value alomg with URL;"GET" does that 10.60.24.135-->
+
+   
+    <form action="http://10.60.24.135/myweb/forms9.asp">
+        <div>
+            <p>
+                <label>Enter Text</label>&nbsp;
+                <input type="text" name="tf1" maxlength="10" value="Sample text" />
+            </p><hr />
+            <p>
+                <label>Enter Password</label>&nbsp;
+                <input type="password" name="pf1" value="Some Value" />
+            </p><hr />
+            <p>
+                <label>Enter Description</label>&nbsp;
+                <textarea name="ta1" style="width:183px; height:59px;" rows="3"></textarea>&nbsp;
+            </p>
+        </div>
+        <hr />
+            Skill Set
+            <p>
+                <input type="checkbox" value="java" id="checkbox1" checked name="cb1">Java </input>
+            </p>
+            <p>
+                <input type="checkbox" value="HTML" id="checkbox2" name="cb1">HTML </input>
+            </p><hr />
+
+
+        <div>
+            Education
+            <p>
+                <input type="radio" name="r1" value="grad">Grad</input>
+            </p>
+            <p>
+                <input type="radio" name="r1" value="postgrad">PostGrad</input>
+            </p>
+        </div>
+            <hr />
+
+
+            <label> City: </label>
+            <select name="city">
+                <option selected>banglore</option>
+                <option>Mysore</option>
+                <option>Chennai</option>
+            </select>
+            <br /><hr />
+
+
+            Upload a file <input type="file" name="f1" /><br />
+            <br />
+            <hr />
+        <div>
+            <input type="submit" value="save" />&nbsp;
+            <input type="reset" value="clear" id="reset1" name="reset1" />
+        </div>
+        </form>
+
+</body>
+</html>

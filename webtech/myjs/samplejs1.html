@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>simple javascript demo</title>
+    <style>
+        .myclass
+        {
+            background-color:white;
+            color:black;
+        }
+        input
+        {
+            background-color:black;
+            color:white;
+        }
+    
+    </style>
+    <script language="javascript">
+        function Display()
+        {
+            //var v1=txt1.value; //may work with few browsers
+            var v1 = document.getElementById("txt1").value;
+            var v2 = document.getElementById("txt2").value;
+            alert("The values entered by the user is:" + v1 + "-" + v2);
+        }
+        function Sum(v1,v2)
+        {
+            var total;
+            total = parseInt(v1) + parseInt(v2);//converting object to int
+            //document.getElementById("lblMsg").innerText = total;
+            //see what happens if you use innerText with HtMl tags
+            //document.getElementById("lblMsg").innerText = "<marquee style='border-color:black;background-color:peachuff;color:red;width:190px;'>"+total+"</marquee>";
+            document.getElementById("lblMsg").innerHTML = "<marquee style='border-color:black;background-color:peachuff;color:red;width:190px;'>" + total + "</marquee>";
+        }
+        function SetRandomValues()
+        {
+            document.getElementById("txt1").value = (new Date()).getMilliseconds();
+            document.getElementById("txt2").value = (new Date()).getMilliseconds();
+        }
+    </script>
+</head>
+<body style="background-color:lightblue;">
+    <h1 style="font-family:Elephant;font-style:oblique;">Simple Javascript Demo</h1><hr />
+    <h2 style="font-family:'Ink Free'; color:blue;"><u>Demo for Events,Buttons,Form submit and reset</u></h2>
+    <form>
+            <b>Val1:</b>
+            <input class="myclass" type="text" id="txt1" value="4000" /><br />
+            <b>Val2:</b>
+            <input class="myclass" type="text" id="txt2" value="5000" /><br />
+        <!--Place holder for messages on the pages-->
+        <div id="lblMsg"></div>
+        <br />
+
+        <input type="button" value="display" onclick="Display();"/>
+        <input type="button" value="sum" onclick="Sum(txt1.value,txt2.value);" />
+        <input type="button" value="set random values" onclick="SetRandomValues();" />
+        <br />
+        <p><b>Form associated buttons</b></p>
+        <input type="submit" value="submit" onclick="Sum(txt1.value, txt2.value); alert('Press ok');" />
+        <input type="reset" value="default values"/>
+    </form>
+    <hr />
+    <button onclick="window.location.href = 'samplejs2.html';">NEXT</button>
+    <button onclick="window.location.href = 'logincheck.html';">BACK</button>
+</body>
+</html>

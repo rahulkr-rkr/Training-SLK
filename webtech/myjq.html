@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     
+    <script type="text/javascript">
+        function OnLoad()
+        {
+        alert("Iam loaded when the document load is done" +Date());
+        }
+        //jQuery(document).ready(OnLoad()); //option1
+
+        //$(document).ready(OnLoad());  //option2
+
+        //$(OnLoad());  //option3
+
+        //calling anonymous function
+        /*$(document).ready(function () {
+            alert("Iam Loaded");
+        });*/
+
+        //going by option 4 processing HTML elements using Tag name
+        $(document).ready(function () {
+            //to access all controlls '*'
+            //will replace the root tag text,you will see only the sample text below
+            //$("*").text("I AM EVERYWHERE");
+
+            //$("*").height(50, 0);
+
+            //$("*").val("I am now on controls with value property");
+
+            //to access comtrols with tag name "<div>"
+            //$("div").html("<h3>I am Everywhere</h3>");
+
+            //to access controls with tag name as text or input type="text'
+            //Second parameter is not needed it is old
+            //$(":text").width(250, 0);
+
+            //To access control with a tag id "<div id="d2"/>"
+            $("#d2").append("<h4>I am also With You</h4>");
+            $("#d2").height(120, 0);
+        });
+    </script>
+</head>
+<body>
+    <h1>Basic Demo For Jquery(Jquery-3.1.1)</h1>
+    <p style="border-style:solid; border-width:1px;">Sample P tag</p>
+    <div id="d1" style="border-style:solid; border-width:1px;">Sample DIV tag 1</div>
+    <div id="d2" style="border-style:solid; border-width:1px;">Sample DIV tag 2</div>
+
+    <input type="text" id="t1" name="nt1" value="Sample1 Text"/>
+    <input type="text" id="t2" name="nt2" value="Sample2 Text" />
+    <input type="button" id="b1" name="nb1" value="Button" />
+</body>
+</html>

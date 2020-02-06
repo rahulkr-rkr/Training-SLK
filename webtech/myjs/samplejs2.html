@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript DEMO</title>
+    <style type="text/css">
+        .Warning
+        {
+            color:red;
+        }
+        .Message
+        {
+            color:blue;
+        }
+    </style>
+    <script type="text/javascript">
+        function Validate(val)
+        {
+            //alert("Value in t1:" + val);
+            //window.document.writeln("value in t1:" + val);
+            //document.getElementById("lblMsg").innerText = "value in t1:" + val;
+            //certain browsers do not allow to access to the controls directly
+            //document.getElementById("lblMsg").innerText = "value in t1:" + val + "t0:" + t0.value;
+            //document.getElementById("lblMsg").innerText = "value in t1:" + val + "t2:" + document.getElementById("t2").value;
+
+            //document.getElementById("lblMsg").innerText = "<b> value in t1:" + val + "t2:" + document.getElementById("t2").value + "</b>";
+
+            //document.getElementById("lblMsg").innerText = "<u class='Warning'><b class='Warning'> value in t1:" + val + "t2:" + document.getElementById("t2").value + "</b></u>";
+
+            document.getElementById("lblMsg").innerText = parseInt(document.getElementById("t1").value) + parseInt(document.getElementById("t2").value);
+            document.getElementById("lblMsg").className = "Warning";
+        }
+    </script>
+</head>
+<body bgcolor="lightblue">
+    <h1 style="background-color:black; color:yellow;">SUM</h1><hr />
+    Val0:<input type="text" id="t0" value="500"/><br />
+    <form method="POST" style="background-color:lightgreen;">
+        Val1:<input type="text" id="t1" value="100" /><br />
+        Val2:<input type="text" id="t2" value="200" />
+        <div id="lblMsg"></div>
+        <input type="button" value="Sum" onclick="return Validate(t1.value);" style="background-color:black; color:white;" />
+    </form>
+    <hr />
+    <button onclick="window.location.href = 'samplejs1.html';">BACK</button>
+    <hr />
+</body>
+</html>

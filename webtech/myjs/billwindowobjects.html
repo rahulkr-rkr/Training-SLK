@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>billwindow</title>
+    <script language="javascript">
+        function convRs()
+        {
+            var ch = optAmt.value;
+            if(ch==1)
+            {
+                txtrob.value = txtrob.value * 40;
+                txttin.value = txttin.value * 40;
+                txtdun.value = txtdun.value * 40;
+                txtpar.value = txtpar.value * 40;
+            }
+            else
+            {
+                txtrob.value = txtrob.value / 40;
+                txttin.value = txttin.value / 40;
+                txtdun.value = txtdun.value / 40;
+                txtpar.value = txtpar.value / 40;
+            }
+        }
+
+        function bill()
+        {
+            var sum = 0;
+            iRobval = txtrobqty.value * txtrob.value;
+            iTinval = txttinqty.value * txttin.value;
+            iDunval = txtdunqty.value * txtdun.value;
+            iParval = txtparqty.value * txtpar.value;
+
+            orderWindow = open("", "MyNewWindow");
+            orderWindow.document.writeln("<h1 align='center'>WebShoppe</h1>");
+            orderWindow.document.writeln("<marquee> <h3 align='right'>A Shop At Your Finger Tips!!!</h3></marquee>");
+            orderWindow.document.writeln("<table align='center' border=5 bgcolor='lightgreen'>");
+            orderWindow.document.writeln("<caption size=+2><b>Bill Details</b></caption>");
+            orderWindow.document.writeln("<tr>");
+            var ch = optAmt.value;
+            if (ch == "1")
+            {
+                orderWindow.document.writeln("<th> Toy Name</th><th>Amount in Rs</th>");
+            }
+            else
+            {
+                orderWindow.document.writeln("<th> Toy Name</th><th>Amount in $</th>");
+            }
+            if(iRobval>0)
+            {
+                orderWindow.document.writeln("<tr><td>Robby The Whale</td><td align='right'>");
+                orderWindow.document.writeln(iRobval);
+                orderWindow.document.writeln("</td>");
+                sum = sum + iRobval;
+            }
+            if(iTinval>0)
+            {
+                orderWindow.document.writeln("<tr><td>Tin Drum</td><td align='right'>");
+                orderWindow.document.writeln(iTinval);
+                orderWindow.document.writeln("</td>");
+                sum = sum + iTinval;
+            }
+            if (iDunval > 0) 
+            {
+                orderWindow.document.writeln("<tr><td>Dune Racer</td><td align='right'>");
+                orderWindow.document.writeln(iDunval);
+                orderWindow.document.writeln("</td>");
+                sum = sum + iDunval;
+            }
+            if (iParval > 0)
+            {
+                orderWindow.document.writeln("<tr><td>Parachut Rocket</td><td align='right'>");
+                orderWindow.document.writeln(iParval);
+                orderWindow.document.writeln("</td>");
+                sum = sum + iParval;
+            }
+
+                orderWindow.document.writeln("<tr><th>Total----></th><th align='right'>");
+                orderWindow.document.writeln(sum);
+                orderWindow.document.writeln("</th>");
+
+                orderWindow.document.writeln("</table>");
+                orderWindow.document.bgColor = 'saddlebrown';
+        }
+    </script>
+</head>
+<body bgcolor="burlywood">
+    <h1 align="center">WEBSHOPPE</h1>
+    <marquee>
+        <h3 align="right">A shop at Your Finger tips!!!</h3>
+    </marquee>
+    <table align="center" border="5" bgcolor="lightgreen">
+        <caption><font size="+2" color="green"><b>List of TOYS</b></font></caption>
+        <tr>
+            <th>Toy Name</th>
+            <th align="right"><select id="optAmt" onchange="convRs()">
+                <option value="1">Price in Rs</option>
+                <option value="2">Price in $</option>
+                </select>
+            </th>
+            <th>Enter QTY Required</th>
+        </tr>
+        <tr>
+            <td>Robby The Whale</td>
+            <td align="right">
+                <input id="txtrob" type="text" value="400" size="10" align="right" readonly />
+            </td>
+            <td align="right">
+                <input id="txtrobqty" type="text" value="" size="10" align="right" />
+            </td>
+        </tr>
+        <tr>
+            <td>Tin Drum</td>
+            <td align="right">
+                <input id="txttin" type="text" value="450" size="10" align="right" readonly />
+            </td>
+            <td align="right">
+                <input id="txttinqty" type="text" value="" size="10" align="right" />
+            </td>
+        </tr>
+        <tr>
+            <td>Dune Racer</td>
+            <td align="right">
+                <input id="txtdun" type="text" value="500" size="10" align="right" readonly />
+            </td>
+            <td align="right">
+                <input id="txtdunqty" type="text" value="" size="10" align="right" />
+            </td>
+        </tr>
+        <tr>
+            <td>Prachute Rocket</td>
+            <td align="right">
+                <input id="txtpar" type="text" value="600" size="10" align="right" readonly />
+            </td>
+            <td align="right">
+                <input id="txtparqty" type="text" value="" size="10" align="right" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="button" value="confirm" onclick="bill()" align="center" />
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>login page</title>
+    <script language="javascript">
+        function validate()
+        {
+            var vUserName;
+            var vPassWord;
+
+            //this will not working from chrome
+            //vUserName=un.value;
+            //vPassWord=pw.value;
+
+            vUserName = document.getElementById("un").value;
+            vPassWord = document.getElementById("pw").value;
+            msg = document.getElementById("msg");
+            if((vUserName.length<5)||(vPassWord.length<5))
+            {
+                //msg.value="Invalid No of characters
+                msg.innerText = "I N O C";
+            }
+            else
+            {
+                //msg.value="waiting for Server Response";
+                msg.innerText="W F S R"
+            }
+        }
+    </script>
+</head>
+<body bgcolor="lightblue">
+    <h1 align="center" style="background-color:indigo;"><font color="red"><center>Sample LOGIN SCREEN</center></font></h1><br />
+    <label>UserName:</label>
+    <input type="text" name="un" id="un" maxlength="5"/><br /><br />
+    <label>Password:</label>
+    <input type="password" name="pw" id="pw" maxlength="5" /><br />
+
+    <input type="button" value="login" name="b1" onclick="validate()" /><br />
+    <!--<input type="text" name="msg" id="msg" size=30 readonly/>-->
+    <div id="msg"/>
+    <hr />
+    <button onclick="window.location.href = 'samplejs1.html';">LOGIN</button>
+    <hr />
+</body>
+</html>
