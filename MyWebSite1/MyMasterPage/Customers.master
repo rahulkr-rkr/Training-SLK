@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Customers.master.cs" Inherits="MyMasterPage_Customers" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:lightblue">
+    <form id="form1" runat="server">
+    <div style="border:solid;border-color:yellow;">
+        <h1>Customers page</h1>
+           <a href="Home.aspx">Home</a>
+           <a href="products.aspx">Products</a>
+         </div>
+        <div>
+        <asp:ContentPlaceHolder id="DynamicContent" runat="server">
+        </asp:ContentPlaceHolder>
+            </div>
+   
+    </form>
+</body>
+</html>
