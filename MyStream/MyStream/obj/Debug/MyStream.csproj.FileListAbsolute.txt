@@ -1,0 +1,6 @@
+C:\Workarea\csharp\MyStream\MyStream\bin\Debug\MyStream.exe.config
+C:\Workarea\csharp\MyStream\MyStream\obj\Debug\MyStream.csprojResolveAssemblyReference.cache
+C:\Workarea\csharp\MyStream\MyStream\bin\Debug\MyStream.exe
+C:\Workarea\csharp\MyStream\MyStream\bin\Debug\MyStream.pdb
+C:\Workarea\csharp\MyStream\MyStream\obj\Debug\MyStream.exe
+C:\Workarea\csharp\MyStream\MyStream\obj\Debug\MyStream.pdb
